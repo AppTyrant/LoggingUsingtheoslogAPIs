@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11185.2" systemVersion="16A268" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11151.3"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Paper_Company__Swift_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penelope's Paper Products" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" autoshrinkMode="minimumScaleFactor" translatesAutoresizingMaskIntoConstraints="NO" id="TQP-41-rmD">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWa-zA-2dF">
+                                <state key="normal" title="💣"/>
+                                <connections>
+                                    <action selector="bombButtonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mOy-Fd-MTD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTv-Yj-6h9">
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <state key="normal" title="🚚 x0"/>
+                                <connections>
+                                    <action selector="truckButtonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3It-qv-9XX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQd-zQ-T0t">
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <state key="normal" title="🌲 x5"/>
+                                <connections>
+                                    <action selector="treeButtonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FfV-n2-OpT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPm-KS-Y12">
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <state key="normal" title="📄 x0"/>
+                                <connections>
+                                    <action selector="paperButtonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iua-EV-iUi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fQd-zQ-T0t" firstAttribute="centerX" secondItem="kTv-Yj-6h9" secondAttribute="centerX" id="09s-7v-fws"/>
+                            <constraint firstItem="kTv-Yj-6h9" firstAttribute="top" secondItem="fQd-zQ-T0t" secondAttribute="bottom" constant="8" id="BH1-M2-wt5"/>
+                            <constraint firstItem="TQP-41-rmD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GG7-wp-xSg"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="wWa-zA-2dF" secondAttribute="leading" id="MVS-lg-Trl"/>
+                            <constraint firstItem="kTv-Yj-6h9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MpM-qH-KOy"/>
+                            <constraint firstItem="QPm-KS-Y12" firstAttribute="top" secondItem="kTv-Yj-6h9" secondAttribute="bottom" constant="8" id="MvP-ri-wEq"/>
+                            <constraint firstItem="QPm-KS-Y12" firstAttribute="centerX" secondItem="kTv-Yj-6h9" secondAttribute="centerX" id="bbh-GD-4Ig"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wWa-zA-2dF" secondAttribute="bottom" constant="8" id="hnT-V5-ouL"/>
+                            <constraint firstItem="kTv-Yj-6h9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mZF-Rq-q00"/>
+                            <constraint firstItem="TQP-41-rmD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nCU-vZ-ScU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TQP-41-rmD" secondAttribute="trailing" id="uVs-QM-XlA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="companyNameLabel" destination="TQP-41-rmD" id="vCr-ds-Rte"/>
+                        <outlet property="paperButton" destination="QPm-KS-Y12" id="N1a-Y8-WYf"/>
+                        <outlet property="treeButton" destination="fQd-zQ-T0t" id="A6J-oW-cfp"/>
+                        <outlet property="truckButton" destination="kTv-Yj-6h9" id="73U-dh-ebB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
